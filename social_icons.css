@@ -1,6 +1,47 @@
 /*--------------------------------------------------
 side icons
 ---------------------------------------------------*/
+.going-home {
+	padding: 0;
+	margin: 0;
+	position: fixed;
+	bottom:0;
+}
+.going-home li{
+	list-style-type: none;
+}
+.going-home ul{
+	padding: 0;
+}
+.going-home li a {
+	-moz-transition: all 0.3s ease 0s;
+	display: block;
+	height: 100%;
+	width: 40px;
+	height: 40px;
+	text-indent: -9999px;
+}
+.going-home li a:hover {
+	background-position: 0 -40px!important;
+}
+.going-home li a {
+	background-color:transparent;
+}
+.going-home li.home a {
+	background: url(icons/home.png) no-repeat 0 0;
+	background-color: #FFFFFF;
+}
+.going-home li.home a:hover {
+	background-color: #f45750;
+}
+.going-home li.danger a {
+	background: url(icons/danger.png) no-repeat 0 0;
+	background-color: #FFFFFF;
+}
+.going-home li.danger a:hover {
+	background-color: black;
+}
+
 .social-icons {
 	padding: 0;
 	margin: 0;
@@ -54,7 +95,6 @@ side icons
 .social-icons li.cargo a {
 	background: url(icons/cargo.png) no-repeat 0 0;
 }
-.
 .social-icons li.delicious a {
 	background: url(icons/delicious.png) no-repeat 0 0;
 }
@@ -70,6 +110,13 @@ side icons
 }
 .social-icons li.flickr a:hover {
 	background-color: #f1628b;
+}
+.social-icons li.github a {
+	background: url(icons/github.png) no-repeat 0 0;
+	background-color: #FFFFFF
+}
+.social-icons li.github a:hover {
+	background-color: lightblue;
 }
 .social-icons li.google a {
 	background: url(icons/google.png) no-repeat 0 0;
@@ -160,7 +207,6 @@ side icons
 .social-icons li.wordpress a:hover {
 	background-color: #464646;
 }
-
 .social-icons li.yelp a {
 	background: url(icons/yelp.png) no-repeat 0 0;
 }
