@@ -1,0 +1,122 @@
+* {
+    font-family: MuseoSans;
+}
+
+.div-transbox {
+    margin: 30px;
+    width: 110px;
+    height: 110px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity:0.2;
+    filter:alpha(opacity=20); /* For IE8 and earlier */ 
+    align:inline;
+    align-self:center;
+    position:relative;
+    border-radius: 100%;
+}
+.div-transbox:hover {
+    background-color: lightblue ;
+    cursor:crosshair;
+} 
+
+.div-transbox-mandatory {
+    margin: 0px;
+    width: 300px;
+    height: 300px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity:0.2;
+    filter:alpha(opacity=20); /* For IE8 and earlier */ 
+    align:inline;
+    align-self:center;
+    position:relative;
+    //border-radius: 100%;
+    background: url(edit.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.div-transbox-mandatory:hover {
+    border-color: lightblue ;
+    cursor:crosshair;
+} 
+
+.title {
+    font-size: 85px;
+    text-align: center;
+    font-family: Verdana;
+    color:white;
+}
+
+.div-container {
+    height: 1000px;
+    width: 1000px;
+    border: 2px solid black;
+    border-radius: 5px;
+    display:inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    float:left;
+}
+
+body  {
+    //background-image: url("wallpaper1.jpg");
+    //background-
+    //background-image: url('http://www.w3schools.com/images/w3logotest2.png');
+    //background-repeat: no-repeat;
+    //background-attachment: fixed;
+    //background-position: right top;
+
+    background: url(wallpaper1.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.div-top-left-big {
+    margin: 0px;
+    width: 120px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 1px solid grey;
+    position:absolute;
+    top:0;
+    left:100px;
+    align:inline;
+    
+    position:fixed;
+    font-size: 30px;
+    font-style: none;
+    color:blue;
+    
+    display: flex;
+    justify-contente: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    align-self:center;
+
+    border-radius: 2%;
+    font-weight: bold;
+}
+
+.div-top-left-small {
+    margin-top: 52px;
+    width: 120px;
+    height: 2px;
+    background-color: #ffffff;
+    border: 1px solid grey;
+    position:absolute;
+    top:0;
+    left:100px;
+    align:inline;
+    align-self:center;
+    position:fixed;
+}
+
+.div-top-left-big:hover {
+    background-color: #F00000 ;
