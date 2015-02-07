@@ -3,15 +3,19 @@
 }
 
 .div-transbox {
-    margin: 30px;
+    //margin: 30px;
+    margin:30px;
+    //margin-top: 150px;
+    overflow: auto;
+    display: inline-block;
     width: 110px;
     height: 110px;
     background-color: #ffffff;
     border: 1px solid black;
     opacity:0.2;
     filter:alpha(opacity=20); /* For IE8 and earlier */ 
-    align:inline;
-    align-self:center;
+    //align:inline;
+    //align-self:center;
     position:relative;
     border-radius: 100%;
 }
@@ -19,30 +23,31 @@
     background-color: lightblue ;
     cursor:crosshair;
 } 
-
 .div-transbox-mandatory {
     margin: 0px;
     width: 300px;
     height: 300px;
-    background-color: #ffffff;
+    //background-color: #ffffff;
     border: 1px solid black;
-    opacity:0.2;
-    filter:alpha(opacity=20); /* For IE8 and earlier */ 
-    align:inline;
-    align-self:center;
+    //opacity:1;
+    margin-left: auto;
+    margin-right: auto;
+    //filter:alpha(opacity=20); /* For IE8 and earlier */ 
+    //align:inline;
     position:relative;
-    //border-radius: 100%;
-    background: url(edit.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
+    //align:center;
+    border-radius: 100%;
+    background: url(edit.jpg) no-repeat fixed top; 
+    -webkit-background-size: cover; 
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: auto;
 }
 
 .div-transbox-mandatory:hover {
     border-color: lightblue ;
     cursor:crosshair;
-} 
+} safari sim
 
 .title {
     font-size: 85px;
