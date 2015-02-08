@@ -7,12 +7,13 @@ html, body {
   height: 100%
 }
 
-p{
-    margin: 0;
+body {
+    background-image: url(url2.png) -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.2));
+    background-color: #cccccc;
 }
 
-#bgimage{
-    background-image: url('url2.png'),     -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.2));
+p{
+    margin: 0;
 }
 
 @font-face {
@@ -82,43 +83,16 @@ p{
     vertical-align: center
 }
 
-.starter{
-    background-color: white;
-    border-radius: 6px;
-    display: inline-block;
-    line-height: 200px;
-    width: 100%;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    top: 0;
-    color: white;
-}
-
-.inside-image{
-}
-
-.darker{
-    /*background-image: url('url2.png'),     -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.2));*/
-    background-color: #444;
-    border-radius: 6px;
-    display: inline-block;
-    line-height: 100px;
-    width: 100%;
-    position: relative;
-    top: 0;
-    color: white;
-}
-
 .social{
-    /*background-image: url('url2.png'),     -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.2));*/
-    background-color: #444;
+    /*background-image: url('url2.png'),     -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.2));
+    background-color: #444;*/
+    background-color: transparent;
     border-radius: 6px;
     display: inline-block;
-    line-height: 200px;
+    line-height: 50px;
     width: 100%;
     position: relative;
-    margin: 0.25em;
+    /*margin: 0.25em;*/
     top: 0;
     margin-left:auto;
     margin-right:auto;
