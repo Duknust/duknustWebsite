@@ -15,10 +15,10 @@
 <body>
   <div id="maincontent">
     <ul class="topbar">
-      <li><a ref="https:facebook.com">Top</a></li>
-      <li><a ref="https:facebook.com">Main Skils</a></li>
-      <li><a ref="https:facebook.com">Contact</a></li>
-      <li><a ref="https:facebook.com">Find Me</a></li>
+      <li><a href="#top">Top</a></li>
+      <li><a href="https://facebook.com">Main Skils</a></li>
+      <li><a href="https://facebook.com">Contact</a></li>
+      <li><a href="https://facebook.com">Find Me</a></li>
     </ul>
     <div class="starter">
       <h1>ola mundo</h1>
@@ -39,26 +39,39 @@
       
     <div class="darker"> <!--background dark-->
     </div>
-    <div>
+    <div id="divtoberevel1" style="visibility: hidden">
       <ul class="social"> <!--social-->
           <hr /> <!--divisão de conteudo-->
           <center>
             <h1>Find me</h1>
-            <li><a class="fa-facebook" href="http://facebook.com"></a></li>
-            <li><a class="fa-twitter" href="http://twitter.com"></a></li>
+            <li><a class="fa-facebook" href="http://facebook.com/duknust"></a></li>
+            <li><a class="fa-twitter" href="http://twitter.com/duknust"></a></li>
             <li><a class="fa-linkedin" href="http://linkedin.com"></a></li>
             <li><a class="fa-google-plus" href="http://google.com"></a></li>
-            <li><a class="fa-github" href="http://github.com"></a></li>
+            <li><a class="fa-github" href="http://github.com/Duknust"></a></li>
           </center>
           <hr /> <!--divisão de conteudo-->
       </ul>
     </div>
   </div>
 
+  <footer>
+    <p>Criado pelo maior</p>
+  </footer>
 
-    <footer>
-        <p> Criado pelo maior</p>
-    </footer>
+  <script type="text/javascript">
+    function showIt1sec() {
+    document.getElementById("divtoberevel1").style.visibility = "visible";
+    }
+    setTimeout("showIt1sec()", 1000); // after 1 sec
+  </script>
+
+  <script type="text/javascript">
+    function showIt5sec() {
+    document.getElementById("divtoberevel5").style.visibility = "visible";
+    }
+    setTimeout("showIt5sec()", 5000); // after 1 sec
+  </script>
 
   </body>
 </html> 

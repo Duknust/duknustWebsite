@@ -2,6 +2,14 @@
     font-family: "Open Sans";
 }
 
+html, body {
+  overflow-x: hidden;
+  height: 100%
+}
+
+p{
+    margin: 0;
+}
 
 @font-face {
   font-family: "Open Sans";
@@ -10,7 +18,23 @@
   src: local("Open Sans Bold"), local("OpenSans-Bold"), url("http://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzBampu5_7CjHW5spxoeN3Vs.woff2") format("woff2"), url("http://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff") format("woff");
 }
 
+.topbar a:link {
+    color: white;
+    text-decoration: none;
+
+}
+.topbar a:visited {
+    color: white;
+    text-decoration: none;
+}
+.topbar a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+
 .topbar{
+    
     background-color: #383838;
     position: fixed;
     top:0;
@@ -21,6 +45,7 @@
     z-index: 1;
     display: inline-block;
     text-align: center;
+
     
 }
 
@@ -28,11 +53,15 @@
 	display: inline-block;
 	text-align: center;
 	margin-left: -4px; /* For the inline-block spacing */
+    color:white;
+    vertical-align: center
+    
 }
 
 .topbar > li > a {
 	padding:5px 18px;
 	display: block;
+    vertical-align: center
 }
 
 .topbar > li > ul {
@@ -47,8 +76,8 @@
 	margin-top:30px;
 	padding: 0px;
 	z-index: 99;
+    vertical-align: center
 }
-
 
 .starter{
     background-color: white;
@@ -56,7 +85,6 @@
     display: inline-block;
     line-height: 200px;
     width: 100%;
-
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -65,7 +93,6 @@
 }
 
 .inside-image{
-
 }
 
 .darker{
