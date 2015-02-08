@@ -53,17 +53,19 @@
     -ms-transform: translateY(-25%);
     transform: translateY(-25%);
 }
-
 .doubleSpace{
     margin-bottom:30px;
 }
-
 .menutitlecolor{
     color: white;
 }
 .titlemenu{
-    font-size: 25px;
+    font-size: 35px;
 }
-.menuselection a:hover{
-
+.menuselection a{
+    color: white;
 }
+.menuselection a:link    {color:white; text-decoration:none}
+.menuselection a:visited {color:white; text-decoration:none}
+.menuselection a:hover   {color:red; text-decoration:none}
+.menuselection a:active  {color:red; text-decoration:none}
