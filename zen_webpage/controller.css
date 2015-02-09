@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+}
+.bgactive{
+    background-image: url("pier.jpg");
+    background-repeat:no-repeat;
+   	background-size:cover;
+    background-color: #F00000;
+    color: white;
+}
+.fill-width-inline{ /*div use all height*/
+    min-height: 100%;
+    display: flex;
+    > div{
+        flex:1;
+        display: flex;
+    }
+}
+/*align divs*/
+.leftdiv{ /*horinzontal div left side*/
+    background-color: transparent;
+    min-height: 100%;
+    min-width: 25%;
+}
+.rightdiv{ /*horinzontal div right side*/
+    background-color: transparent;
+    min-height: 100%;
+    min-width: 75%;
+}
+.top10{
+    min-height: 10%;
+}
+.top25{
+    min-height: 25%;
+}
+.bop10{
+    min-height: 10%;
+}
+.bot75{
+    min-height: 75%;
+}
+.mid70{
+    min-height: 80%;
+}
+.rightbotalign{ /*div align to bot and right*/
+    position: absolute; 
+    bottom: 10px;    
+    right: 25px;
+}
+.sidemenu{
+    margin: 55% 0 0 15%;
+    max-width: 50%;
+
+}
+.list-item-button{
+    margin-top: 10%;
+    border: 1px solid grey;
+    border-radius: 7px;
+    color: black;
+    background-color: white;
+    opacity: 0.4;
+}
+.list-item-button:hover{
+    border: 2px solid black;
+    color: black;
+    background-color: grey;
+    opacity: 0.7;   
+}
+.list-item-button:visited{
+    margin-top: 10%;
+    border: 1px solid grey;
+    border-radius: 7px;
+    color: white;
+    background-color: grey;
+    opacity: 0.4;   
+    text-decoration: none;
+}
+.list-item-button:link{
+    margin-top: 10%;
+    border: 1px solid grey;
+    border-radius: 7px;
+    color: white;
+    background-color: grey;
+    opacity: 0.4;   
+}
+.list-item-button:active{
+    margin-top: 10%;
+    border: 1px solid grey;
+    border-radius: 7px;
+    color: white;
+    background-color: grey;
+}
+.90transparent{
+    opacity: 0.9;   
+}
+.with-borders{
+    border: 1px solid black;
+    border-radius: 7px;
+    top: 10%;
+    min-height: 65%;
+    max-width: 85%;
+    margin-left: 10%;
+    background-color: grey;
+    opacity: 0.6;   
+}

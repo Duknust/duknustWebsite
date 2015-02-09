@@ -10,6 +10,7 @@
 
     <script type="text/javascript" src="scripts/d3.min.js"></script>
     <script type="text/javascript" src="scripts/radialProgress.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     
     <link rel="stylesheet" href="social-topbar.css" />
     <link rel="stylesheet" href="pagecontroler.css" />
@@ -36,6 +37,9 @@
           <a href="https://facebook.com">  
             <p class="doubleSpace menuselection">Contact<p>
           </a>
+          <a href="https://facebook.com">  
+            <p class="doubleSpace menuselection">Blog<p>
+          </a>
         </center>
       </div>
       <div class="menutitleposition menutitlecolor">
@@ -50,7 +54,9 @@
         </center>
       </div>
       <div class="creatorposition">
-        <p>created by Duarte Duarte</p>
+        <a href='#' class="back-to-top">
+        
+        </a>
       </div>
     </div>
 
@@ -76,18 +82,8 @@
         </div>
       </div>
       <div class="middlealign"><!--middle paragraph talking about-->
-        <div id='outer' style="margin-top:20px; padding:10px; color:white">
-          <div id="main">
-          <div id="topdiv">
-            <div id="javaradial"></div>
-            <div id="div2"></div>
-            <div id="div3"></div>
-          </div>
-          <div id="botdiv">  
-            <div id="div4"></div>
-          </div>
-          </div>
-        </div>
+        <p class="aboutmeBig tab">Hi my name is <abbr title="Duarte Nuno Ferreira Duarte"&><strong>Duarte Duarte</strong></abbr>.</p>
+        <p class="aboutme" style="font-family:verdana">I am a zombie</p>
       </div>
       <div class="rightbotalign"><!--right bot social-->
         <ul class="social"> <!--social-->
@@ -100,9 +96,10 @@
       <div>
     </div>
   </section>
-  <div>
+  <a href="#" class="back-to-top">Back to Top</a>
+  <div class="longi">
     <!--<div id="divtoberevel1" style="visibility: hidden">-->
-    
+    a
     <!--</div>-->
   </div>
   <script type="text/javascript">
@@ -175,6 +172,25 @@
                 .value(150)
                 .render();
     }
+  </script>
+  <script>            
+    jQuery(document).ready(function() {
+      var offset = 220;
+      var duration = 500;
+      jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > offset) {
+          jQuery('.back-to-top').fadeIn(duration);
+        } else {
+          jQuery('.back-to-top').fadeOut(duration);
+        }
+      });
+      
+      jQuery('.back-to-top').click(function(event) {
+        event.preventDefault();
+        jQuery('html, body').animate({scrollTop: 0}, duration);
+        return false;
+      })
+    });
   </script>
   </body>
 </html> 

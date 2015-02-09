@@ -1,0 +1,188 @@
+*{
+    font-family: "Open Sans";
+}
+
+html, body {
+  overflow-x: hidden;
+  height: 100%
+}
+
+body {
+    background-image: url(images/url2.png) -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.2));
+    background-color: #cccccc;
+}
+
+p{
+    margin: 0;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("http://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzBampu5_7CjHW5spxoeN3Vs.woff2") format("woff2"), url("http://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff") format("woff");
+}
+
+.topbar a:link {
+    color: white;
+    text-decoration: none;
+
+}
+.topbar a:visited {
+    color: white;
+    text-decoration: none;
+}
+.topbar a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+
+.topbar{
+    background-color: #383838;
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 60px;
+    color: white;
+    list-style-type: none;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+
+    
+}
+
+.topbar > li {
+	display: inline-block;
+	text-align: center;
+	margin-left: -4px; /* For the inline-block spacing */
+    color:white;
+    vertical-align: center
+    
+}
+
+.topbar > li > a {
+	padding:5px 18px;
+	display: block;
+    vertical-align: center
+}
+
+.topbar > li > ul {
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	list-style: none;
+	top:53px;
+	background-color: #16a085;
+	width: 200px;
+	text-align: left;
+	margin-top:30px;
+	padding: 0px;
+	z-index: 99;
+    vertical-align: center
+}
+
+.social{
+    /*background-image: url('url2.png'),     -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.2));
+    background-color: #444;*/
+    background-color: transparent;
+    border-radius: 6px;
+    display: inline-block;
+    line-height: 50px;
+    width: 100%;
+    position: relative;
+    /*margin: 0.25em;*/
+    top: 0;
+    margin-left:auto;
+    margin-right:auto;
+    color: white;
+}
+
+ul.social{
+    position: relative;
+    left: 0;
+}
+
+ul.social li {
+    /*background-image: url('bg.png'),     -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.2));*/
+    background-color: #444;
+    border-radius: 6px;
+    display: inline-block;
+    line-height: 48px;
+    width: 48px;
+    position: relative;
+    margin: 0.25em;
+    top: 0;
+    color: white;
+    opacity: 0.6;
+}
+
+ul.social li a {
+    background-color: transparent;
+    box-shadow: inset 0px 0px 0px 1px #282828, inset 0px 2px 1px 0px rgba(255,255,255,0.1);
+}
+
+ul.social li a.fa-twitter {
+    background: url(images/tw2.png); 
+    opacity:0.5;
+    filter:alpha(opacity=50); /* For IE8 and earlier */ 
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+ul.social li a.fa-facebook {
+    background: url(images/fb2.png);
+    opacity:0.5;
+    filter:alpha(opacity=50); /* For IE8 and earlier */ 
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+ul.social li a.fa-linkedin {
+    background: url(images/in2.png);
+    opacity:0.5;
+    filter:alpha(opacity=50); /* For IE8 and earlier */ 
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+ul.social li a.fa-google-plus {
+    background: url(images/gp2.png);
+    opacity:0.5;
+    filter:alpha(opacity=50); /* For IE8 and earlier */ 
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+ul.social li a.fa-github {
+    background: url(images/gh2.png);
+    opacity:0.5;
+    filter:alpha(opacity=50); /* For IE8 and earlier */ 
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+ul.social li a.fa-twitter:hover           { background-color: #2DAAE4; }
+ul.social li a.fa-facebook:hover          { background-color: #3C5A98; }
+ul.social li a.fa-linkedin:hover          { background-color: #006599; }
+ul.social li a.fa-google-plus:hover       { background-color: #DA2713; }
+ul.social li a.fa-github:hover            { background-color: #FAFAFA; }
+ul.social li a.fa-instagram:hover         { background-color: #E0D7C8; }
+ul.social li a.fa-skype:hover             { background-color: #10BEF1; }
+ul.social li a.fa-youtube:hover           { background-color: #BF2E25; }
+
+ul.social li:hover {
+    top: -0px;
+}                   
+   
+ul.social li a {
+    display: block;
+    width: 48px;
+    height: 48px;
+    border-radius: 6px;
+    top: 0;
+    position: relative;
+
+    -moz-transition: top .2s ease-in-out;
+    -webkit-transition: top .2s ease-in-out;
+    -o-transition: top .2s ease-in-out;
+    -ms-transition: top .2s ease-in-out;
+    transition: top .2s ease-in-out;
+}
