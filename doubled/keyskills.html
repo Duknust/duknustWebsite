@@ -7,10 +7,15 @@
     <meta name="generator" content ="sublime">
     <meta name="author" content ="Duarte Duarte">
     <meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+
+    <script type="text/javascript" src="scripts/d3.min.js"></script>
+    <script type="text/javascript" src="scripts/radialProgress.js"></script>
     
     <link rel="stylesheet" href="social-topbar.css" />
-    <link rel="stylesheet" href="colormenu-rotate.css" />
+    <link rel="stylesheet" href="pagecontroler.css" />
     <link rel="stylesheet" href="menuquad2circ.css" />
+    <link rel="stylesheet" href="radialclimb.css" />
+    <link rel="stylesheet" href="styleradial.css">
   </head>
 
 <body>
@@ -18,7 +23,7 @@
     <div class="leftdiv">
       <div class="menutitleposition menutitlecolor">
         <center>
-          <p class="doubleSpace titlemenu">= MENU<p>
+          <p class="doubleSpace titlemenu">≡ MENU<p>
           <a href="https://facebook.com">
             <p class="doubleSpace menuselection">About me<p>
           </a>
@@ -33,14 +38,28 @@
           </a>
         </center>
       </div>
+      <div class="menutitleposition menutitlecolor">
+        <center>
+          <p class="doubleSpace titlemenu"><p>
+          <a href="https://facebook.com">
+            <p class="doubleSpace menuselection">Login<p>
+          </a>
+          <a href="https://facebook.com">  
+            <p class="doubleSpace menuselection">Subscribe<p>
+          </a>
+        </center>
+      </div>
+      <div class="creatorposition">
+        <p>created by Duarte Duarte</p>
+      </div>
     </div>
 
     <div class="rightdiv">
       <div class="righttopalign"><!--right top buttons-->
-        <!--<div class="container">
+        <div class="container">
           <div class="ObjectContainer">
             <div id="red" class="Object"></div>
-            <a href="#"></a>
+            <a href="#top">.</a>
           </div>
           <div class="ObjectContainer">
             <div id="brown" class="Object"></div>
@@ -54,15 +73,21 @@
             <div id="Grey" class="Object"></div>
             <a href="#"></a>
           </div>
-        </div>-->
+        </div>
       </div>
       <div class="middlealign"><!--middle paragraph talking about-->
-        <p>
-          hdia
-        </p>
-        <quote>
-
-        </quote>
+        <div id='outer' style="margin-top:20px; padding:10px; color:white">
+          <div id="main">
+          <div id="topdiv">
+            <div id="javaradial"></div>
+            <div id="div2"></div>
+            <div id="div3"></div>
+          </div>
+          <div id="botdiv">  
+            <div id="div4"></div>
+          </div>
+          </div>
+        </div>
       </div>
       <div class="rightbotalign"><!--right bot social-->
         <ul class="social"> <!--social-->
@@ -92,6 +117,64 @@
     }
     setTimeout("showIt5sec()", 5000); // after 1 sec
   </script>
+  <script language="JavaScript">
+    var div1=d3.select(document.getElementById('javaradial'));
+    var div2=d3.select(document.getElementById('div2'));
+    var div3=d3.select(document.getElementById('div3'));
+    var div4=d3.select(document.getElementById('div4'));
 
+    start();
+
+    function onClick1() {
+        deselect();
+        div1.attr("class","selectedRadial");
+    }
+
+    function onClick2() {
+        deselect();
+        div2.attr("class","selectedRadial");
+    }
+
+    function onClick3() {
+        deselect();
+        div3.attr("class","selectedRadial");
+    }
+
+    function labelFunction(val,min,max) {
+
+    }
+
+    function deselect() {
+        div1.attr("class","radial");
+        div2.attr("class","radial");
+        div3.attr("class","radial");
+    }
+
+    function start() {
+
+      var rp1 = radialProgress(document.getElementById('javaradial'))
+                .label("Java")
+                .onClick(onClick1)
+                .diameter(150)
+                .value(78)
+                .render();
+
+      var rp2 = radialProgress(document.getElementById('div2'))
+                .label("RADIAL 2")
+                .onClick(onClick2)
+                .diameter(150)
+                .value(132)
+                .render();
+
+      var rp3 = radialProgress(document.getElementById('div3'))
+                .label("RADIAL 3")
+                .onClick(onClick3)
+                .diameter(150)
+                .minValue(100)
+                .maxValue(200)
+                .value(150)
+                .render();
+    }
+  </script>
   </body>
 </html> 

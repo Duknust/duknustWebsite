@@ -3,7 +3,8 @@
 }
 
 .bgactive{
-    background-image: url("url2.png") ;
+    /*background-image: url("url.png");*/
+    background-image: url("urlbg.jpg");
     background-color: #F00000;
 }
 
@@ -65,7 +66,26 @@
 .menuselection a{
     color: white;
 }
-.menuselection a:link    {color:white; text-decoration:none}
-.menuselection a:visited {color:white; text-decoration:none}
-.menuselection a:hover   {color:red; text-decoration:none}
-.menuselection a:active  {color:red; text-decoration:none}
+.menuselection a:link{
+    color:white;
+    text-decoration:none;
+}
+.menuselection a:visited{
+    color:white;
+    text-decoration:none;
+}
+.menuselection a:hover{
+    color:red;
+    text-decoration:none;
+}
+.menuselection a:active{
+    color:red;
+    text-decoration:none;
+}
+.creatorposition{
+    position: absolute; 
+    bottom: 10px; 
+    left: 20px;   
+    color: grey;
+    font-size: 10px;
+}
