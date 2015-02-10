@@ -2,11 +2,48 @@
     margin: 0;
 }
 .bgactive{
-    background-image: url("pier.jpg");
+    /*background-image: url("pier.jpg");
+    background-image: url("url.png");
+    background-image: url("sf.jpg");*/
+    background-image: url("pier2.jpg");    
+    
     background-repeat:no-repeat;
    	background-size:cover;
     background-color: #F00000;
     color: white;
+}
+.logoactive{
+    top: 10px;    
+    left: 25px;
+    background-image: url("logotransparente.png");
+    background-repeat:no-repeat;
+    background-size: 20%;
+    color: white;
+}
+.logoactive:hover{
+    top: 10px;    
+    left: 25px;
+    background-image: url("logotransparente.png");
+    background-repeat:no-repeat;
+    background-size: 20%;
+    color: white;
+    opacity: 0.65;
+}
+.owner-picture{
+    background-image: url("owner.jpg");
+    background-size: 60%;
+    background-repeat:no-repeat;
+    color: white;
+    opacity: 0.65;
+    margin: 0% 0 0 15%;
+}
+.owner-picture:hover{
+    background-image: url("owner.jpg");
+    background-size: 60%;
+    background-repeat:no-repeat;
+    color: white;
+    opacity: 1;
+    margin: 0% 0 0 15%;
 }
 .fill-width-inline{ /*div use all height*/
     min-height: 100%;
@@ -36,11 +73,29 @@
 .bop10{
     min-height: 10%;
 }
+.bot55{
+    min-height: 55%;
+}
+.bot65{
+    min-height: 65%;
+}
 .bot75{
     min-height: 75%;
 }
+.mid25{
+    min-height: 25%;
+}
+.mid35{
+    min-height: 35%;
+}
 .mid70{
     min-height: 80%;
+}
+.left30{
+    min-width: 30%;
+}
+.rigth70{
+    min-width: 70%;
 }
 .rightbotalign{ /*div align to bot and right*/
     position: absolute; 
@@ -48,9 +103,8 @@
     right: 25px;
 }
 .sidemenu{
-    margin: 55% 0 0 15%;
+    margin: 25% 0 0 15%;
     max-width: 50%;
-
 }
 .list-item-button{
     margin-top: 10%;
@@ -101,5 +155,17 @@
     max-width: 85%;
     margin-left: 10%;
     background-color: grey;
+    text-indent: 2%;
     opacity: 0.6;   
+}
+.with-borders:hover{
+    border: 1px solid black;
+    border-radius: 7px;
+    top: 10%;
+    min-height: 65%;
+    max-width: 85%;
+    margin-left: 10%;
+    background-color: grey;
+    text-indent: 2%;
+    opacity: 0.9; 
 }
