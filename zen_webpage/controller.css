@@ -9,7 +9,7 @@
     
     background-repeat:no-repeat;
    	background-size:cover;
-    background-color: #F00000;
+    background-color: grey;
     color: white;
 }
 .logoactive{
@@ -96,6 +96,11 @@
 }
 .rigth70{
     min-width: 70%;
+}
+.alignrigth{
+    position: absolute;
+    top: 20px;
+    right: 30px;
 }
 .rightbotalign{ /*div align to bot and right*/
     position: absolute; 
